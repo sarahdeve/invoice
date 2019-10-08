@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>receipt</title>
+
+</head>
+
+<body>
+	<style>
+		tr, td 
+		{
+			border-radius: 10px;
+			text-align: center;
+		}
+		input 
+		{
+			border-radius: 10px;
+			text-align: center;
+			}
+			/*#cont input{
+				font-weight:200;
+
+			}*/
+	</style>
+<table border="2" style="background-color: skyblue;">
+
+	<tr id="cont">
+		<td style="width: 40px;"><input type="" value="S/N" name="" style=" width:40px;" disabled=""></td>
+		<td><input type="" value="Products." name="" disabled=""></td>
+		<td><input type="" value="Name." name="" disabled=""></td>
+		<td><input type="" value="Quantity Aval." name="" disabled=""></td>
+		<td><input type=""  value="Unit Cost. #" name="" disabled=""></td>
+		<td><input type="" value="Quantity." id="tototal" name=""></td>
+		<td><input type="" value="Amount." name="" disabled=""></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="1" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="text" value="" disabled=""></td>
+		<td><input type="" value="Plasma Tv" disabled=""></td>
+		<td><input type="" value="25" disabled="" id="qa"></td>
+		<td><input type="" value="5000" disabled="" id="up"></td>
+		<td ><input type="number" value="" id="or" onkeyup="one()"></td>
+		<td><input type="" value="" disabled="" id="tot"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="2" name="" style="width: 40px;"" disabled=""></td>
+		<td><input type="text" value="" disabled=""></td>
+		<td><input type="" value="Tecno phone" disabled=""></td>
+		<td><input type="" value="40" disabled="" id="qantit"></td>
+		<td><input type="" value="15000" disabled="" id="list"></td>
+		<td><input type="number" value="" id="ordered" onchange="two()"></td>
+		<td><input type="" value="" disabled="" id="total"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="3" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="text" value="" disabled=""></td>
+		<td><input type="" value="Guitar" disabled=""></td>
+		<td><input type="" value="30" id="acc" disabled=""></td>
+		<td><input type="" value="85000" id="deal" disabled=""></td>
+		<td><input type="number" value="" id="ask" onchange="three()" ></td>
+		<td><input type="" value="" disabled="" id="show"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="4" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="text" value="" disabled="" ></td>
+		<td><input type="" value="Sneaker" disabled=""></td>
+		<td><input type="" value="45" disabled="" id="numb"></td>
+		<td><input type="" value="3000" disabled="" id="agree"></td>
+		<td><input type="number" value="" id="want" onchange="four()"></td>
+		<td><input type="" value="" disabled="" id="disp"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="5" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="text" value="" disabled=""></td>
+		<td><input type="" value="Perfume" disabled=""></td>
+		<td><input type="" value="35" disabled="" id="fi"></td>
+		<td><input type="" value="5900" disabled="" id="vev"></td>
+		<td><input type="number" value="" id="fiv" onchange="five()"></td>
+		<td><input type="" value="" disabled="" id="give"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="6" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="text" value="" disabled=""></td>
+		<td><input type="" value="Blender" disabled=""></td>
+		<td><input type="" value="46" disabled="" id="si"></td>
+		<td><input type="" value="3600" disabled="" id="ix"></td>
+		<td><input type="number" value="" id="is" onchange="six()"></td>
+		<td><input type="" value="" disabled="" id="ok"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="7" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="text" value="" disabled=""></td>
+		<td><input type="" value="Microwave Oven" disabled=""></td>
+		<td><input type="" value="35" disabled="" id="se"></td>
+		<td><input type="" value="15600" disabled="" id="ve"></td>
+		<td><input type="number" value="" id="en" onchange="seven()"></td>
+		<td><input type="" value="" disabled="" id="display"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="8" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="text" value="" disabled=""></td>
+		<td><input type="" value="Electric Jug" disabled=""></td>
+		<td><input type="" value="50" disabled="" id="ei"></td>
+		<td><input type="" value="2600" disabled="" id="gh"></td>
+		<td><input type="number" value="" id="ht" onchange="eight()"></td>
+		<td><input type="" value="" disabled="" id="back"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 40px;"><input type="" value="9" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="text" value="" disabled=""></td>
+		<td><input type="" value="fabric" disabled=""></td>
+		<td><input type="" value="40" disabled="" id="amt"></td>
+		<td><input type="" value="2900" disabled="" id="pri"></td>
+		<td><input type="number"  id="orde" onchange="nine()"></td>
+		<td><input type="" value="" disabled="" id="toht"></td>
+	</tr>
+
+	<tr>
+		<td style="width: 20px;"><input type="" value="10" name="" style="width: 40px;" disabled=""></td>
+		<td><input type="" value="" disabled=""></td>
+		<td><input type="" value="Shoe" disabled=""></td>
+		<td><input type=""  value="46" disabled="" id="am"></td>
+		<td><input type="" value="6500" disabled="" id="pr"></td>
+		<td><input type="number" value="" id="ord" onchange="ten()"></td>
+		<td><input type="" value="" disabled="" id="toh"></td>
+	</tr>
+	
+	
+	<tr id="trow"  style="margin-right:150px">
+		
+		<td   colspan="3">Total #<input type="" placeholder="overall"  value="0" name="" disabled="" id="ot";> </td>
+		<td><button id="by" onclick="buy()" style="width: 100px; border-radius: 10px; ">Buy</button></td>
+	</tr>
+</table> 
+<script type="text/javascript" src="invoice.js"></script>
+<script>
+  	
+	
+
+	 	// if (twenty.value <= 19) {
+	//  		console.log('out of stock')
+	//  	} else {
+	// 		twenty.value = parseInt(tw) - parseInt(on);
+	// 		console.log(tw);
+		
+	// }
+</script>
+</body>
+</html>
